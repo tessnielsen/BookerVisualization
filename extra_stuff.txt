@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="scroll-wrapper">
+      <div class="sticky-labels">
+        <div class="label"></div>
+        <div class="label">Chris Murphy</div>
+        <div class="label">Alfonse D'Amato</div>
+        <div class="label">Jeff Merkley</div>
+        <div class="label">Huey Long</div>
+        <div class="label">William Proxmire</div>
+        <div class="label">Robert M. La Follette Sr.</div>
+        <div class="label">Ted Cruz</div>
+        <div class="label">Wayne Morse</div>
+        <div class="label">Alfonse D'Amato</div>
+        <div class="label">Strom Thurmond</div>
+        <div class="label">Cory Booker</div>
+      </div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+
+  timeline
+  .selectAll(".bar")
+  .data(speeches)
+  .join("div")
+  .attr("class", d => "bar" + (d.name === "Cory Booker" ? " booker" : ""))
+  .style("width", d => scale(d.seconds) + "px");
