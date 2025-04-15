@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #scrolly {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  
+  .graphic {
+    flex: 2;
+    position: sticky;
+    top: 0;
+    height: 80vh;
+  }
+  
+  .steps {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .step {
+    margin-bottom: 4rem;
+    padding: 1rem;
+    background: #f0f0f0;
+    border-left: 4px solid #888;
+  }
+  
+  svg#chart {
+    width: 100%;
+    height: 100%;
+  }
+  
