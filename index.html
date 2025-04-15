@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Booker Speech Visualization</title>
+  <meta charset="UTF-8">
+  <title>Booker's Epic Speech</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <section id="scrolly">
-      <div class="scroll-text">
-        <div class="step" data-step="0">Longest Senate speeches in U.S. history.</div>
-        <div class="step" data-step="1">Cory Booker's 25-hour speech in context.</div>
-        <div class="step" data-step="2">Here's what he talked about.</div>
-        <!-- Add more steps as needed -->
-      </div>
-      <div class="scroll-graphic">
-        <svg id="timeline" width="100%" height="600"></svg>
-      </div>
-    </section>
-  </main>
+  <div class="scroll-wrapper">
+    <div class="sticky-labels">
+      <div class="label">Cory Booker</div>
+      <div class="label">Strom Thurmond</div>
+      <!-- more names -->
+    </div>
+    <div class="timeline-container">
+      <!-- horizontal bars go here -->
+    </div>
+  </div>
+  
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="https://unpkg.com/scrollama"></script>
   <script src="script.js"></script>
 </body>
 </html>
-

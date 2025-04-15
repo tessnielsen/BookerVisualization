@@ -1,37 +1,65 @@
 body {
   margin: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
   font-family: sans-serif;
-}
-#scrolly {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-}
-.scroll-text {
-  width: 35%;
-  padding: 20px;
-  position: sticky;
-  top: 0;
   height: 100vh;
-  overflow-y: auto;
-}
-.scroll-graphic {
-  width: 65%;
-  position: relative;
-}
-.step {
-  margin-bottom: 200px;
-  font-size: 1.25em;
-}
-.bar {
-  fill: steelblue;
-}
-.bar.booker {
-  fill: tomato;
-}
-.label {
-  fill: black;
-  font-size: 14px;
 }
 
-  
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.y-axis {
+  width: 150px;
+  background: #f0f0f0;
+  padding: 20px 10px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  position: sticky;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 10;
+}
+
+.scroll-wrapper {
+  display: flex;
+}
+
+.sticky-labels {
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 2;
+  padding-right: 10px;
+}
+
+.label {
+  height: 40px; /* match bar height */
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  width: 10000px; /* crazy wide! */
+  padding-top: 20px;
+  padding-right: 200px;
+}
+
+.bar {
+  height: 30px;
+  margin: 10px 0;
+  background: steelblue;
+}
+
+.bar.booker {
+  background: tomato;
+}
+
+
+
