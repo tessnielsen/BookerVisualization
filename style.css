@@ -21,7 +21,7 @@ body {
 .row-container {
   display: inline-block;
   min-width: 9000px;
-  padding-right: 200px;
+  padding-right: 100px;
   padding-bottom: 100px; /* Adds space below the bars for the bubbles */
 }
 
@@ -60,11 +60,7 @@ body {
 .bar {
   height: 20px;
   margin: 10px 0;
-  background: steelblue;
-}
-
-.bar.booker {
-  background: tomato;
+  background: green;
 }
 
 .quote-bubbles {
